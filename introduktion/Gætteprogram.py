@@ -19,3 +19,6 @@ else:
 # Fejlen kommer pga linje 3 hvor du definere at det skal være en "int" (integer) og ikke en "str" (string)
 # 
 # Denne fejl vil komme uanset hvad du inputter så længe det ikke er en integer (et nummer uden decimaler)
+# Dette kan fixes ved brug af en try/except statement som vil fange fejlen og give en besked til brugeren
+except ValueError:
+    print("Fejl! Du skal indtaste et heltal.")
